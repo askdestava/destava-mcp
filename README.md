@@ -29,7 +29,7 @@ All three are read-only.
 | Claude (claude.ai, Desktop) | Settings → Connectors → Add custom connector → `https://destava.com/mcp` |
 | Claude Code | `claude mcp add --transport http destava https://destava.com/mcp` |
 | ChatGPT | Plugins → Add → Add custom MCP server → `https://destava.com/mcp`, No authentication |
-| Cursor | [`mcp.json`](mcp.json) in your project's `.cursor/` folder, or Settings → MCP → Add |
+| Cursor | [`.cursor/mcp.json`](.cursor/mcp.json) into your project's `.cursor/` folder, or Settings → MCP → Add |
 | VS Code | "MCP: Add Server" → HTTP → `https://destava.com/mcp` |
 | Cline | MCP Servers → Configure → add `"destava": {"type": "streamableHttp", "url": "https://destava.com/mcp"}` under `mcpServers` |
 | Kilo Code | MCP settings → add `"destava": {"type": "streamable-http", "url": "https://destava.com/mcp"}` under `mcpServers` |
@@ -47,4 +47,5 @@ to 7 days. [Privacy Policy](https://destava.com/privacy) (section 8 covers searc
 ## About this repository
 
 It holds connection files only. The server is run by Destava (Xprtis LLC) at `destava.com` and is not open source; the
-files here are MIT licensed. Questions: ask@destava.com.
+files here are MIT licensed. `plugin.json` and `mcp.json` follow the [Agent Plugins](https://agent-plugins.org)
+format; `server.json` is the official MCP Registry entry. Questions: ask@destava.com.
