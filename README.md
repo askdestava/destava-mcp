@@ -31,6 +31,8 @@ All three are read-only.
 | ChatGPT | Plugins → Add → Add custom MCP server → `https://destava.com/mcp`, No authentication |
 | Cursor | [`mcp.json`](mcp.json) in your project's `.cursor/` folder, or Settings → MCP → Add |
 | VS Code | "MCP: Add Server" → HTTP → `https://destava.com/mcp` |
+| Cline | MCP Servers → Configure → add `"destava": {"type": "streamableHttp", "url": "https://destava.com/mcp"}` under `mcpServers` |
+| Kilo Code | MCP settings → add `"destava": {"type": "streamable-http", "url": "https://destava.com/mcp"}` under `mcpServers` |
 | Gemini CLI | `gemini extensions install https://github.com/askdestava/destava-mcp` |
 | Grok | grok.com/connectors → New Connector → Custom → `https://destava.com/mcp` |
 
