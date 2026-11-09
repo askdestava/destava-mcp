@@ -10,6 +10,7 @@
   },
   "homepage": "https://destava.com/mcp/docs",
   "privacyPolicyUrl": "https://destava.com/privacy",
+  "supportUrl": "https://destava.com/contact",
   "repository": "https://github.com/askdestava/destava-mcp",
   "license": "MIT",
   "keywords": [
