@@ -38,6 +38,21 @@ All three are read-only.
 
 Then ask, for example: "Find AI engineer jobs in San Francisco posted this week."
 
+## As a Claude plugin
+
+This repository is also a Claude plugin, `destava`: the connector above (`.mcp.json`) and a skill,
+[`destava-job-search`](skills/destava-job-search/SKILL.md), that tells Claude when to search, how to turn a request into
+the search's fields, how to show each job with the company's own link, and that nothing is set up for a daily search
+until you approve it. In Claude Code:
+
+```
+/plugin install destava --marketplace askdestava/destava-mcp
+```
+
+**What it sends:** when Claude uses a tool, the search (what you're looking for, the place and the filters) or the
+posting link asked about, to `https://destava.com/mcp`. Never your conversation. The plugin runs no code on your
+machine and stores nothing itself.
+
 ## Privacy
 
 Destava records the query and your client's name, not who asked; our host's request logs keep network addresses for up
@@ -48,4 +63,5 @@ to 7 days. [Privacy Policy](https://destava.com/privacy) (section 8 covers searc
 
 It holds connection files only. The server is run by Destava (Xprtis LLC) at `destava.com` and is not open source; the
 files here are MIT licensed. `plugin.json` and `mcp.json` follow the [Agent Plugins](https://agent-plugins.org)
-format; `server.json` is the official MCP Registry entry. Questions: ask@destava.com.
+format; `.claude-plugin/plugin.json`, `.mcp.json` and `skills/` are the Claude plugin; `server.json` is the official
+MCP Registry entry. Questions: ask@destava.com.

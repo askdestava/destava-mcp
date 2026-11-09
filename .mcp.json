@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "destava": {
+      "type": "http",
+      "url": "https://destava.com/mcp"
+    }
+  }
+}

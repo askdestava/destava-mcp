@@ -1,0 +1,15 @@
+{
+  "name": "destava",
+  "description": "Destava's plugin for Claude: job search from companies' own career sites.",
+  "owner": {
+    "name": "Destava",
+    "email": "ask@destava.com"
+  },
+  "plugins": [
+    {
+      "name": "destava",
+      "source": "./",
+      "description": "Search current job postings from companies' own career sites, check whether one is still open, and set up a search that runs every morning. Free, and no account is needed to search."
+    }
+  ]
+}
